@@ -1,0 +1,439 @@
+body {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Catamaran", sans-serif;
+    min-height: 100vh;
+    min-width: 110vh;
+    margin-inline: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /*border: 1px solid red;*/
+    gap: 20px;
+}
+
+
+.page-size-A4 {
+    display: flex;
+    width: 210mm;
+    height: 297mm;
+    background: white;
+}
+
+.main-column {
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 2px;
+    background-color: lightgrey;
+    overflow: hidden;
+    /*border: 1px solid red;*/
+}
+
+.side-column {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 2px;
+    background-color: lightgrey;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+header {
+    /*border: 1px solid blue;*/
+    margin-bottom: -40px;
+}
+
+.overflow-hidden-text {
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Yellowtail", cursive;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 45px;
+    margin: 0;
+    font-weight: normal;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Catamaran", sans-serif;
+    font-weight: normal;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: none;
+}
+
+.link {
+    color: blue;
+    font-weight: normal;
+}
+
+.section-in-main-column {
+    margin: 0 20px;
+    border-left: 1px solid black;
+    border-radius: 20px;
+
+}
+
+
+/*--------------------------- LOGOS SPACE ---------------------------*/
+.space-with-logos {
+    display: flex;
+    /*border: 1px solid yellow;*/
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-inline: auto;
+}
+
+.circular-logo {
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 17.5px;
+    margin-top: 10px;
+    /*border: 1px solid red;*/
+}
+
+.text-for-logo {
+    display: inline;
+    width: 400px;
+    text-align: justify;
+    /*border: 1px solid blue;*/
+}
+
+.custom-list {
+    list-style-type: circle;
+    margin: 0; /* Remove the default margin from li elements */
+    padding: 0; /* Remove padding from li elements */
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* --------------------------- DONUTS GRAPH ---------------------------*/
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 20px;
+    margin: 0 auto;
+    /*border: 1px solid blue;*/
+}
+
+#myChart {
+    margin: 0 auto;
+}
+
+/* --------------------------- SPACE IN THE LEFT COLUMN ---------------------------*/
+
+.profile-picture {
+    width: 140px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto;
+    /*border: 1px solid blue;*/
+}
+
+.hr-line {
+    width: 100px;
+    /* margin for left and right */
+    margin: 8px;
+    border-bottom: 2.4px solid black;
+    border-radius: 50px;
+}
+
+.box {
+    width: 95%;
+    font-size: 16px;
+    /*border: 1px solid blue;*/
+}
+
+/* -------------------------------------------- HORIZONTAL LINES SPACE -------------------------------------------- */
+section {
+    display: flex;
+}
+
+/* -------------------------------------------- LANGUAGES -------------------------------------------- */
+#slovak-language {
+    animation: slovak-language-fill 2s forwards;
+}
+
+@keyframes slovak-language-fill {
+    from {
+        width: 0; /* Explicitly define starting width */
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#english-language {
+    animation: english-language-fill 2s forwards;
+}
+
+@keyframes english-language-fill {
+    from {
+        width: 0; /* Explicitly define starting width */
+    }
+    to {
+        width: 80%;
+    }
+}
+
+span {
+    font-family: "Catamaran", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.language-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.bar {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #f2f3f4;
+    margin: 0 auto;
+}
+
+span {
+    font-family: "Catamaran", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.bar div {
+    height: 6px;
+    border-radius: 10px;
+    background-color: #bf9aca;
+}
+
+/* -------------------------------------- PROJECTS (hover text) --------------------------------------*/
+.hover-text {
+    position: relative;
+}
+
+.hover-text:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 420px;
+    height: 275px;
+    background-color: #eccfc3;
+    color: black;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    top: -200px;
+}
+
+.hover-text:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+h4 {
+    text-align: center;
+}
+
+/* -------------------------------------- SOFT SKILLS --------------------------------------*/
+
+.language-label {
+    background-color: #bf9aca;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.position-language-box {
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+
+
+/* 1. ability, Adding css animation */
+
+#communication-bar {
+    animation: communication-bar-fill 2s forwards;
+}
+
+@keyframes communication-bar-fill {
+    from {
+        width: 0;
+    }
+    to {
+        width: 75%;
+    }
+}
+
+/* 2. ability, Adding css animation */
+
+#self-motivation-bar {
+    animation: self-motivation-fill 2s forwards;
+}
+
+@keyframes self-motivation-fill {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+/* 3. ability, Adding css animation */
+
+#time-management-bar {
+    animation: time-management-fill 2s forwards;
+}
+
+@keyframes time-management-fill {
+    from {
+        width: 0;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+/* 4. ability, Adding css animation */
+
+#teamwork-bar {
+    animation: teamwork-fill 2s forwards;
+}
+
+@keyframes teamwork-fill {
+    from {
+        width: 0;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+/* 5. ability, Adding css animation */
+
+#creativity-bar {
+    animation: creativity-fill 2s forwards;
+}
+
+@keyframes creativity-fill {
+    from {
+        width: 0;
+    }
+    to {
+        width: 88%;
+    }
+}
+
+/* -------------------------------------- REFERENCES --------------------------------------*/
+
+.no-bullet {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.reference-person {
+    /*border: 1px solid red;*/
+    width: 50%;
+    margin-left: 20px;
+}
+
+.reference-space {
+    display: flex;
+}
+
+.button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #17795E;
+    background-color: #209978;
+    overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+
+.button .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #17795E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .svg {
+    width: 20px;
+    fill: #fff;
+}
+
+.button:hover {
+    background: #17795E;
+}
+
+.button:hover .button__text {
+    color: transparent;
+}
+
+.button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+
+.button:active .button__icon {
+    background-color: #146c54;
+}
+
+.button:active {
+    border: 1px solid #146c54;
+}
