@@ -437,3 +437,13 @@ h4 {
 .button:active {
     border: 1px solid #146c54;
 }
+
+.download-button {
+    background-color: #bf9aca;
+    border-radius: 10px;
+    padding:5px 10px;
+    font-size: 16px;
+    font-family: "Catamaran", sans-serif;
+    border: none;
+    font-weight: bold;
+}
