@@ -125,7 +125,7 @@ a:hover {
 }
 
 .custom-list {
-    list-style-type: circle;
+    /*list-style-type: circle;*/
     margin: 0; /* Remove the default margin from li elements */
     padding: 0; /* Remove padding from li elements */
     margin-left: 10px;
