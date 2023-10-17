@@ -10,7 +10,7 @@ $(document).ready(function ($) {
             margin: 0,
             filename: 'viszkocsilova-cv.pdf', // Specify the PDF file name
             image: {type: 'jpeg', quality: 1}, // Image options
-            html2canvas: {scale: 2}, // Scale for better resolution
+            html2canvas: {scale: 3}, // Scale for better resolution
             jsPDF: {unit: 'mm', format: 'A4', orientation: 'portrait'} // A4 page format
         };
 
