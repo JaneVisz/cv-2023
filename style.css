@@ -4,7 +4,8 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Catamaran", sans-serif;
-    min-width: 125vh;
+    min-height: 100vh;
+    min-width: 110vh;
     margin-inline: auto;
 }
 
