@@ -12,9 +12,8 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    /*border: 1px solid red;*/
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 

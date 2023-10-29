@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, initial-scale=1" >
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
     <script src="https://kit.fontawesome.com/e9c6802667.js" crossorigin="anonymous"></script>
@@ -18,9 +18,8 @@
 
 <body>
 <!--<button class="btn_print">PRINT .pdf</button>-->
-<div class="content">
 
-    <!--DO NOT DELETE THIS BUTTON - IT GENERATES PDF FORMAT -->
+<!--DO NOT DELETE THIS BUTTON - IT GENERATES PDF FORMAT -->
 
 <!--        <button class="button btn_print" type="button">-->
 <!--            <span class="button__text">Download</span>-->
@@ -35,172 +34,171 @@
 <!--        <button class="download-button">Download</button>-->
 <!--    </a>-->
 
-    <div class="page-size-A4" id="cv-container">
-        <div class="side-column">
-            <img class="profile-picture" src="./profilePic.png" alt="">
+<div class="page-size-A4" id="cv-container">
+    <div class="side-column">
+        <img class="profile-picture" src="./profilePic.png" alt="">
 
-            <!-- first box: CONTACTS -->
-            <div class="box">
-                <section>
-                    <div class="hr-line"></div>
-                    <div><i class="fas fa-id-card"></i></div>
-                    <div class="hr-line"></div>
-                </section>
-                <h3><strong>CONTACTS</strong></h3>
-                <div><i class="fas fa-phone-square-alt"></i>&nbsp;&nbsp;+420 606 435 273</div>
-                <div><i class="fas fa-envelope-open-text"></i>&nbsp;&nbsp;jana.viszkocsilova@gmail.com</div>
-                <div><i class="fas fa-globe"></i>&nbsp;&nbsp;janevisz.github.io/aboutMe/</div>
-                <div><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Prague, Czech Republic</div>
-            </div>
+        <!-- first box: CONTACTS -->
+        <div class="box">
+            <section>
+                <div class="hr-line"></div>
+                <div><i class="fas fa-id-card"></i></div>
+                <div class="hr-line"></div>
+            </section>
+            <h3><strong>CONTACTS</strong></h3>
+            <div><i class="fas fa-phone-square-alt"></i>&nbsp;&nbsp;+420 606 435 273</div>
+            <div><i class="fas fa-envelope-open-text"></i>&nbsp;&nbsp;jana.viszkocsilova@gmail.com</div>
+            <div><i class="fas fa-globe"></i>&nbsp;&nbsp;janevisz.github.io/aboutMe/</div>
+            <div><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Prague, Czech Republic</div>
+        </div>
 
-            <!-- second box: LANGUAGES -->
-            <div class="box">
-                <section>
-                    <div class="hr-line"></div>
-                    <div><i class="fa fa-language"></i></div>
-                    <div class="hr-line"></div>
-                </section>
-                <h3><strong>LANGUAGES</strong></h3>
-                <div>
-                    <div class="language-details">
-                        <span>Slovak</span>
-                        <span>C2</span>
-                    </div>
-                    <div class="bar">
-                        <div id="slovak-language"></div>
-                    </div>
+        <!-- second box: LANGUAGES -->
+        <div class="box">
+            <section>
+                <div class="hr-line"></div>
+                <div><i class="fa fa-language"></i></div>
+                <div class="hr-line"></div>
+            </section>
+            <h3><strong>LANGUAGES</strong></h3>
+            <div>
+                <div class="language-details">
+                    <span>Slovak</span>
+                    <span>C2</span>
                 </div>
-                <div>
-                    <div class="language-details">
-                        <span>English</span>
-                        <span>B2</span>
-                    </div>
-                    <div class="bar">
-                        <div id="english-language"></div>
-                    </div>
+                <div class="bar">
+                    <div id="slovak-language"></div>
                 </div>
             </div>
-
-            <!-- third box: SOFT SKILLS -->
-            <div class="box">
-                <section>
-                    <div class="hr-line"></div>
-                    <div><i class="fas fa-wrench"></i></div>
-                    <div class="hr-line"></div>
-                </section>
-                <h3><strong>SOFTWARE SKILLS</strong></h3>
-                <div class="position-language-box">
-                    <div class="language-label">TypeScript</div>
-                    <div class="language-label">JavaScript</div>
-                    <br>
-                    <div class="language-label">Python</div>
-                    <div class="language-label">Vue.js</div>
-                    <div class="language-label">QUASAR</div>
-                    <div class="language-label">Storybook</div>
-                    <div class="language-label">Git</div>
+            <div>
+                <div class="language-details">
+                    <span>English</span>
+                    <span>B2</span>
                 </div>
-            </div>
-
-            <!-- fourth box: HOBBIES -->
-            <div class="box">
-                <section>
-                    <div class="hr-line"></div>
-                    <div><i class="fas fa-biking"></i></div>
-                    <div class="hr-line"></div>
-                </section>
-                <h3><strong>INTERESTS</strong></h3>
-                <div><i class="fas fa-music"></i>&nbsp;&nbsp; Dancing-Bachata</div>
-                <div><i class="fas fa-dumbbell"></i>&nbsp;&nbsp;Gym/AcroYoga</div>
-                <div><i class="fas fa-book-reader"></i>&nbsp;&nbsp; Reading</div>
-                <div><i class="fas fa-swimming-pool"></i>&nbsp;&nbsp;Swimming</i></div>
+                <div class="bar">
+                    <div id="english-language"></div>
+                </div>
             </div>
         </div>
 
-        <div class="main-column">
-            <!-- HEADER -->
-            <header>
-                <h1>Ing. Jana Viszkocsilova</h1>
-                <h3 id="junior">- Front-End Developer -</h3>
-            </header>
-            <br>
+        <!-- third box: SOFT SKILLS -->
+        <div class="box">
+            <section>
+                <div class="hr-line"></div>
+                <div><i class="fas fa-wrench"></i></div>
+                <div class="hr-line"></div>
+            </section>
+            <h3><strong>SOFTWARE SKILLS</strong></h3>
+            <div class="position-language-box">
+                <div class="language-label">TypeScript</div>
+                <div class="language-label">JavaScript</div>
+                <br>
+                <div class="language-label">Python</div>
+                <div class="language-label">Vue.js</div>
+                <div class="language-label">QUASAR</div>
+                <div class="language-label">Storybook</div>
+                <div class="language-label">Git</div>
+            </div>
+        </div>
 
-            <!-- WORK EXPERIENCE -->
-            <div class="section-in-main-column">
-                <h3><i class="fas fa-briefcase"></i><strong>
-                    WORK EXPERIENCE</strong></h3>
+        <!-- fourth box: HOBBIES -->
+        <div class="box">
+            <section>
+                <div class="hr-line"></div>
+                <div><i class="fas fa-biking"></i></div>
+                <div class="hr-line"></div>
+            </section>
+            <h3><strong>INTERESTS</strong></h3>
+            <div><i class="fas fa-music"></i>&nbsp;&nbsp; Dancing-Bachata</div>
+            <div><i class="fas fa-dumbbell"></i>&nbsp;&nbsp;Gym/AcroYoga</div>
+            <div><i class="fas fa-book-reader"></i>&nbsp;&nbsp; Reading</div>
+            <div><i class="fas fa-swimming-pool"></i>&nbsp;&nbsp;Swimming</i></div>
+        </div>
+    </div>
 
-                <div class="space-with-logos">
-                    <div><img class="circular-logo" src="./aveco-logo.jpg" alt=""></div>
-                    <div class="text-for-logo"><strong>Aveco</strong> | Prague | <em>05/2023 -
-                        Present</em><br>
-                        Front-End
-                        Developer<br>
-                        <li class="custom-list">Developing user-facing applications using Vue.js</li>
-                        <li class="custom-list">Building modular and reusable components and libraries</li>
-                        <li class="custom-list">Implementing unit tests</li>
-                        <p class="custom-list">I use the following technologies: Vue.js, Quasar component library,
-                            Storybook framework, TypeScript, and Jest testing framework.
-                        </p>
-                    </div>
-                    <div><img class="circular-logo" src="./anect-logo.png" alt=""></div>
-                    <div class="text-for-logo"><strong>Anect </strong>| Prague | <em>11/2022 -
-                        04/2023</em><br>
-                        Front-End
-                        Developer<br>
-                        <li class="custom-list">Participating in the development of the portal for the National
-                            Monuments Office of the
-                            Czech Republic, where I worked with the JSP framework
-                        </li>
-                        <li class="custom-list">Enhancing features in projects that utilize the Vue.js and Ag
-                            frameworks
-                        </li>
-                    </div>
-                    <div><img class="circular-logo" src="./renesas-logo.png" alt=""></div>
-                    <div class="text-for-logo"><strong>Renesas
-                        Electronics</strong> | Prague | <em> 07/2018 - 03/2022</em><br>Analog Design Engineer<br>
-                        <li class="custom-list">
-                            Verification of the viability of various designs and the design of integrated circuit (IC)
-                            layouts
-                        </li>
-                    </div>
+    <div class="main-column">
+        <!-- HEADER -->
+        <header>
+            <h1>Ing. Jana Viszkocsilova</h1>
+            <h3 id="junior">- Front-End Developer -</h3>
+        </header>
+        <br>
+
+        <!-- WORK EXPERIENCE -->
+        <div class="section-in-main-column">
+            <h3><i class="fas fa-briefcase"></i><strong>
+                WORK EXPERIENCE</strong></h3>
+
+            <div class="space-with-logos">
+                <div><img class="circular-logo" src="./aveco-logo.jpg" alt=""></div>
+                <div class="text-for-logo"><strong>Aveco</strong> | Prague | <em>05/2023 -
+                    Present</em><br>
+                    Front-End
+                    Developer<br>
+                    <li class="custom-list">Developing user-facing applications using Vue.js</li>
+                    <li class="custom-list">Building modular and reusable components and libraries</li>
+                    <li class="custom-list">Implementing unit tests</li>
+                    <p class="custom-list">I use the following technologies: Vue.js, Quasar component library,
+                        Storybook framework, TypeScript, and Jest testing framework.
+                    </p>
+                </div>
+                <div><img class="circular-logo" src="./anect-logo.png" alt=""></div>
+                <div class="text-for-logo"><strong>Anect </strong>| Prague | <em>11/2022 -
+                    04/2023</em><br>
+                    Front-End
+                    Developer<br>
+                    <li class="custom-list">Participating in the development of the portal for the National
+                        Monuments Office of the
+                        Czech Republic, where I worked with the JSP framework
+                    </li>
+                    <li class="custom-list">Enhancing features in projects that utilize the Vue.js and Ag
+                        frameworks
+                    </li>
+                </div>
+                <div><img class="circular-logo" src="./renesas-logo.png" alt=""></div>
+                <div class="text-for-logo"><strong>Renesas
+                    Electronics</strong> | Prague | <em> 07/2018 - 03/2022</em><br>Analog Design Engineer<br>
+                    <li class="custom-list">
+                        Verification of the viability of various designs and the design of integrated circuit (IC)
+                        layouts
+                    </li>
                 </div>
             </div>
+        </div>
 
-            <!-- EDUCATION -->
-            <div class=section-in-main-column>
-                <h3><i class="fas fa-user-graduate"></i><strong>
-                    EDUCATION</strong></h3>
-                <div class="space-with-logos">
-                    <div><img class="circular-logo" src="./stu-logo.png" alt=""></div>
-                    <div class="text-for-logo"><strong>STU Bratislava</strong> |<em> 09/2015 - 06/2018</em><br>Faculty
-                        of
-                        Electrical
-                        Engineering and Computer Science<br>
-                        Master's degree in Electronics and Photonics
-                    </div>
-                    <div><img class="circular-logo" src="./stu-logo.png" alt=""></div>
-                    <div class="text-for-logo"><strong>STU Bratislava </strong>|<em> 09/2011 - 06/2015</em><br>Faculty
-                        of
-                        Civil
-                        Engineering<br>
-                        Bachelor's degree in Geodesy, Cartography, and Cadastre
-                    </div>
+        <!-- EDUCATION -->
+        <div class=section-in-main-column>
+            <h3><i class="fas fa-user-graduate"></i><strong>
+                EDUCATION</strong></h3>
+            <div class="space-with-logos">
+                <div><img class="circular-logo" src="./stu-logo.png" alt=""></div>
+                <div class="text-for-logo"><strong>STU Bratislava</strong> |<em> 09/2015 - 06/2018</em><br>Faculty
+                    of
+                    Electrical
+                    Engineering and Computer Science<br>
+                    Master's degree in Electronics and Photonics
+                </div>
+                <div><img class="circular-logo" src="./stu-logo.png" alt=""></div>
+                <div class="text-for-logo"><strong>STU Bratislava </strong>|<em> 09/2011 - 06/2015</em><br>Faculty
+                    of
+                    Civil
+                    Engineering<br>
+                    Bachelor's degree in Geodesy, Cartography, and Cadastre
                 </div>
             </div>
+        </div>
 
-            <!-- REFERENCES -->
-            <div class=section-in-main-column>
-                <h3><i class="fas fa-clipboard-check"></i><strong>
-                    REFERENCES</strong></h3>
-                <div class="reference-space">
-                    <div class="reference-person"><strong>Ing. Jan Kovalský</strong><br>
-                        Senior Engineering Director,</br>
-                        Industrial ASIC BU at Dialog Semiconductor, Prague
-                    </div>
-                    <div class="reference-person"><strong>Sándor Vass</strong><br>
-                        Mentor of Programming,</br>
-                        Green Fox Academy, Budapest
-                    </div>
+        <!-- REFERENCES -->
+        <div class=section-in-main-column>
+            <h3><i class="fas fa-clipboard-check"></i><strong>
+                REFERENCES</strong></h3>
+            <div class="reference-space">
+                <div class="reference-person"><strong>Ing. Jan Kovalský</strong><br>
+                    Senior Engineering Director,</br>
+                    Industrial ASIC BU at Dialog Semiconductor, Prague
+                </div>
+                <div class="reference-person"><strong>Sándor Vass</strong><br>
+                    Mentor of Programming,</br>
+                    Green Fox Academy, Budapest
                 </div>
             </div>
         </div>
